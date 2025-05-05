@@ -1,5 +1,6 @@
 
 import HeroSection from "@/components/HeroSection";
+import ProgrammeHighlightsSection from "@/components/ProgrammeHighlightsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 
@@ -9,6 +10,7 @@ const Index = () => {
       <HeroSection />
       <ProjectsSection />
       <SkillsSection />
+      <ProgrammeHighlightsSection />
       
       {/* Additional sections will be added in future updates */}
     </div>
