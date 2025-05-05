@@ -15,8 +15,8 @@ const Index = () => {
       <SkillsSection />
       <ProgrammeHighlightsSection />
       <WorkshopScheduleSection />
-      <ExpertsSection />
       <LogoLinksSection />
+      <ExpertsSection />
       
       {/* Additional sections will be added in future updates */}
     </div>
