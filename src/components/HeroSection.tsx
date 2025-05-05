@@ -1,12 +1,9 @@
-
 import React from 'react';
 import Logo from './Logo';
 import { Award, Clock, CalendarDays, Percent } from 'lucide-react';
 import { Badge } from './ui/badge';
-
 const HeroSection = () => {
-  return (
-    <div className="bg-modern-white min-h-screen pt-8 pb-16">
+  return <div className="bg-modern-white min-h-screen pt-8 pb-16">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header with Logo */}
         <header className="mb-12">
@@ -18,10 +15,7 @@ const HeroSection = () => {
           {/* Left Side - Text Content */}
           <div className="flex-1">
             {/* Workshop Badge */}
-            <Badge 
-              className="bg-modern-primary text-white px-6 py-2 rounded-full text-xl font-medium mb-5 border-none hover:bg-modern-primary/90" 
-              variant="default"
-            >
+            <Badge className="bg-modern-primary text-white px-6 py-2 rounded-full text-xl font-medium mb-5 border-none hover:bg-modern-primary/90" variant="default">
               10 Day Live Online Workshop
             </Badge>
             
@@ -81,7 +75,8 @@ const HeroSection = () => {
             {/* CTA Button */}
             <div className="mb-6">
               <button className="btn-secondary w-full md:w-auto text-xl font-medium py-4 px-6">
-                Enroll Now @ <span className="line-through">₹15,000</span> ₹10,000
+                Enroll Now @ <span className="line-through">₹10
+,000</span> ₹10,000
               </button>
             </div>
             
@@ -98,17 +93,8 @@ const HeroSection = () => {
           <div className="flex-1 relative mt-8 lg:mt-0">
             {/* Video Container */}
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <video 
-                className="w-full h-auto" 
-                autoPlay 
-                muted 
-                loop
-                playsInline
-              >
-                <source 
-                  src="https://img.etb2bimg.com/files/retail_files/file_1746014146_compiled_ai_students_hero.webm" 
-                  type="video/webm" 
-                />
+              <video className="w-full h-auto" autoPlay muted loop playsInline>
+                <source src="https://img.etb2bimg.com/files/retail_files/file_1746014146_compiled_ai_students_hero.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -120,8 +106,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
