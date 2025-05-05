@@ -54,7 +54,7 @@ const HeroSection = () => {
                   </svg>
                 </div>
                 <h3 className="text-sm font-semibold text-[#202020] mb-1">Get Certified</h3>
-                <p className="text-sm text-gray-600">The Times of India</p>
+                <p className="text-sm text-gray-600">LevelUp</p>
               </div>
               
               {/* Pick a Slot */}
@@ -115,7 +115,7 @@ const HeroSection = () => {
             
             {/* Featured Banner */}
             <div className="absolute -bottom-3 md:-bottom-4 right-0 transform rotate-2 bg-[#ffd900] text-[#202020] px-5 py-3 rounded-lg font-medium text-sm md:text-base shadow-lg z-10">
-              Get your Child Featured on The Times of India Website
+              Get your Child Featured on the LevelUp Website
             </div>
           </div>
         </div>
