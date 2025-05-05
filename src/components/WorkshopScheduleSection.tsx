@@ -173,13 +173,23 @@ const WorkshopScheduleSection = () => {
           >
             <ToggleGroupItem 
               value="week1" 
-              className={`rounded-full px-6 py-2 transition-all ${activeWeek === 'week1' ? 'bg-purple-600 text-white font-medium' : 'text-gray-700'}`}
+              aria-label="Toggle Week 1"
+              className={`rounded-full px-6 py-2 transition-colors ${
+                activeWeek === 'week1' 
+                  ? 'bg-toi-purple text-white font-medium' 
+                  : 'text-gray-700 hover:bg-gray-200'
+              }`}
             >
               Week 1
             </ToggleGroupItem>
             <ToggleGroupItem 
               value="week2" 
-              className={`rounded-full px-6 py-2 transition-all ${activeWeek === 'week2' ? 'bg-purple-600 text-white font-medium' : 'text-gray-700'}`}
+              aria-label="Toggle Week 2"
+              className={`rounded-full px-6 py-2 transition-colors ${
+                activeWeek === 'week2' 
+                  ? 'bg-toi-purple text-white font-medium' 
+                  : 'text-gray-700 hover:bg-gray-200'
+              }`}
             >
               Week 2
             </ToggleGroupItem>
