@@ -1,5 +1,5 @@
+
 import React, { useState } from 'react';
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface ClassCardProps {
@@ -150,8 +150,73 @@ const WorkshopScheduleSection = () => {
     }
   ];
   
-  // For now, we'll keep the same classes for Week 2 as specified
-  const week2Classes = [...week1Classes];
+  // Updated Week 2 classes based on the provided image
+  const week2Classes = [
+    {
+      dayOfWeek: "Monday",
+      date: "9 June",
+      classNumber: "Class 6",
+      title: "Make Your Own Mini Movies with AI!",
+      description: "Become your favourite superhero and create AI movies of yourself.",
+      activities: [
+        { text: "Put your face on your favourite superhero", color: "bg-blue-400" },
+        { text: "How to generate AI voice and music", color: "bg-blue-400" },
+        { text: "How to make a birthday song for your friend or family member using AI", color: "bg-blue-400" }
+      ],
+      takeaway: "Students will create mini movies with avatars, music, and AI voices like young directors.",
+      borderColor: "border-blue-500"
+    },
+    {
+      dayOfWeek: "Tuesday",
+      date: "10 June",
+      classNumber: "Class 7",
+      title: "Build Your First Mini App Without Coding!",
+      description: "What is no-code and why it's the future.",
+      activities: [
+        { text: "How to generate a website without coding", color: "bg-purple-400" },
+        { text: "How to create a web app using vibe-coding", color: "bg-purple-400" },
+        { text: "How to understand UX and UI Design in products", color: "bg-purple-400" }
+      ],
+      takeaway: "Students will build their first no-code app by learning UX and UI basics.",
+      borderColor: "border-purple-500"
+    },
+    {
+      dayOfWeek: "Wednesday",
+      date: "11 June",
+      classNumber: "Class 8",
+      title: "Meet Your Own Personal AI Agent",
+      description: "What are AI agents, and how do they help you work smarter?",
+      activities: [
+        { text: "How to generate an N8N Agent to do research and automation", color: "bg-green-400" },
+        { text: "How to use ChatGPT APIs to create AI Agents for emailing and writing", color: "bg-green-400" }
+      ],
+      takeaway: "Students will learn how AI agents can become smart personal assistants.",
+      borderColor: "border-green-500"
+    },
+    {
+      dayOfWeek: "Thursday",
+      date: "12 June",
+      classNumber: "Class 9",
+      title: "Live Homework Review",
+      description: "Students ask doubts around their AI-created projects and get feedback.",
+      activities: [
+        { text: "Small tips to make projects even better", color: "bg-pink-400" },
+        { text: "Celebrate creativity and effort in the group!", color: "bg-pink-400" }
+      ],
+      takeaway: "Students will gain confidence by showcasing and improving their AI-created projects.",
+      borderColor: "border-pink-500"
+    },
+    {
+      dayOfWeek: "Friday",
+      date: "13 June",
+      classNumber: "Class 10",
+      title: "Top Showcase by Students",
+      description: "Top 20 students will showcase their projects and give a presentation to the entire group.",
+      activities: [],
+      takeaway: "Students will present their best projects to peers and parents on the last day of this cohort.",
+      borderColor: "border-orange-500"
+    }
+  ];
 
   return (
     <section className="py-16 bg-white">
