@@ -20,6 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
 				'playfair': ['"Playfair Display"', 'serif'],
 			},
 			colors: {
@@ -73,6 +74,15 @@ export default {
 					'dark-purple': '#5935E8',
 					yellow: '#FFB800',
 					'light-purple': '#8361FF',
+				},
+				// New color palette
+				modern: {
+					'primary': '#3B2EFF', 
+					'dark': '#1E1C45',
+					'coral': '#FF6D5A',
+					'white': '#FDFDFF',
+					'sky': '#3A80F7',
+					'gray': '#8A8A8E'
 				}
 			},
 			borderRadius: {
