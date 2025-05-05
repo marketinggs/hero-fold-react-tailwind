@@ -2,6 +2,7 @@
 import React from 'react';
 import Logo from './Logo';
 import { Award, Clock, CalendarDays, Percent } from 'lucide-react';
+import { Badge } from './ui/badge';
 
 const HeroSection = () => {
   return (
@@ -16,10 +17,13 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
           {/* Left Side - Text Content */}
           <div className="flex-1">
-            {/* Workshop Banner */}
-            <div className="inline-block bg-[#6948f1] text-[#ffd900] px-6 py-2 rounded-full text-xl font-medium mb-5">
+            {/* Workshop Badge */}
+            <Badge 
+              className="bg-[#6948f1] text-[#ffd900] px-6 py-2 rounded-full text-xl font-medium mb-5 border-none hover:bg-[#6948f1]/90" 
+              variant="default"
+            >
               10 Day Live Online Workshop
-            </div>
+            </Badge>
             
             {/* Main Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202020] mb-2">
