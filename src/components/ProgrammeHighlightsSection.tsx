@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileText, Users, Puzzle, Tool, Video, Award } from 'lucide-react';
+import { FileText, Users, Puzzle, Wrench, Video, Award } from 'lucide-react';
 
 interface HighlightCardProps {
   icon: React.ReactNode;
@@ -56,7 +56,7 @@ const ProgrammeHighlightsSection = () => {
       textColor: "text-blue-600"
     },
     {
-      icon: <Tool className="h-6 w-6" />,
+      icon: <Wrench className="h-6 w-6" />,
       title: "Cutting-Edge AI Tools",
       description: "Hands-On to 10+ AI tools to elevate your kid's learning",
       bgColor: "bg-green-100",
