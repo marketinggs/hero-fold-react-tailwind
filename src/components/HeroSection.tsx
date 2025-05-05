@@ -68,7 +68,7 @@ const HeroSection = () => {
                 </div>
                 <h3 className="text-sm font-semibold text-modern-dark mb-1">Duration</h3>
                 <p className="text-sm text-modern-gray">2 Weeks</p>
-                <p className="text-sm text-modern-gray">Jun 2 Onwards</p>
+                <p className="Enroll Now @ <span class=\"line-through\">\u20B910,000</span> \u20B9499">Enroll Now @ ₹10,000 ₹499</p>
               </div>
             </div>
             
