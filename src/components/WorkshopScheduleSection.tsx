@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -165,35 +164,32 @@ const WorkshopScheduleSection = () => {
         
         {/* Week Toggle */}
         <div className="flex justify-center mb-10">
-          <ToggleGroup 
-            type="single" 
-            value={activeWeek} 
-            onValueChange={(value) => value && setActiveWeek(value)}
-            className="bg-gray-100 rounded-full p-1"
-          >
-            <ToggleGroupItem 
-              value="week1" 
-              aria-label="Toggle Week 1"
-              className={`rounded-full px-6 py-2 transition-colors ${
+          <div className="inline-flex bg-gray-100 rounded-full p-1">
+            <button
+              onClick={() => setActiveWeek('week1')}
+              className={`rounded-full px-8 py-2.5 text-sm font-medium transition-colors ${
                 activeWeek === 'week1' 
-                  ? 'bg-toi-purple text-white font-medium' 
+                  ? 'bg-toi-purple text-white' 
                   : 'text-gray-700 hover:bg-gray-200'
               }`}
+              aria-pressed={activeWeek === 'week1'}
+              aria-label="Show Week 1 schedule"
             >
               Week 1
-            </ToggleGroupItem>
-            <ToggleGroupItem 
-              value="week2" 
-              aria-label="Toggle Week 2"
-              className={`rounded-full px-6 py-2 transition-colors ${
+            </button>
+            <button
+              onClick={() => setActiveWeek('week2')}
+              className={`rounded-full px-8 py-2.5 text-sm font-medium transition-colors ${
                 activeWeek === 'week2' 
-                  ? 'bg-toi-purple text-white font-medium' 
+                  ? 'bg-toi-purple text-white' 
                   : 'text-gray-700 hover:bg-gray-200'
               }`}
+              aria-pressed={activeWeek === 'week2'}
+              aria-label="Show Week 2 schedule"
             >
               Week 2
-            </ToggleGroupItem>
-          </ToggleGroup>
+            </button>
+          </div>
         </div>
         
         {/* Workshop Schedule Content */}
