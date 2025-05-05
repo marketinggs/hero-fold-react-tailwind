@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -172,13 +173,13 @@ const WorkshopScheduleSection = () => {
           >
             <ToggleGroupItem 
               value="week1" 
-              className={`rounded-full px-6 py-2 transition-all ${activeWeek === 'week1' ? 'bg-blue-600 text-white' : 'text-gray-700'}`}
+              className={`rounded-full px-6 py-2 transition-all ${activeWeek === 'week1' ? 'bg-purple-600 text-white font-medium' : 'text-gray-700'}`}
             >
               Week 1
             </ToggleGroupItem>
             <ToggleGroupItem 
               value="week2" 
-              className={`rounded-full px-6 py-2 transition-all ${activeWeek === 'week2' ? 'bg-blue-600 text-white' : 'text-gray-700'}`}
+              className={`rounded-full px-6 py-2 transition-all ${activeWeek === 'week2' ? 'bg-purple-600 text-white font-medium' : 'text-gray-700'}`}
             >
               Week 2
             </ToggleGroupItem>
